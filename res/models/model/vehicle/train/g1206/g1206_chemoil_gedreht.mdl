@@ -1,0 +1,540 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 7.34, 1.59, 4.6 },
+		bbMin = { -7.34, -1.59, -0.2, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 9.607, 1.56, 2.97, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/g1206/rumpf_chemoil.mtl", },
+						mesh = "vehicle/train/g1206/rumpf_lod0.msh",
+						name = "Rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/unterbau_chemoil.mtl", },
+						mesh = "vehicle/train/g1206/unterbau_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/beweglich.mtl", },
+						mesh = "vehicle/train/g1206/anbausatz_lod0.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/beweglich.mtl", },
+						mesh = "vehicle/train/g1206/schlingerdampfer_lod0.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+						children = {
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/drehgestell_lod0.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/radsatz_lod0.msh",
+								name = "rad",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2, 0, 0.496794, 1, },
+							},
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/radsatz_lod0.msh",
+								name = "rad",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2, 0, 0.496794, 1, },
+							},
+							{
+								animations = {
+									drive = {
+										params = {
+											id = "vehicle/train/g1206/antriebswelle.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/antriebswelle_lod0.msh",
+								name = "Antriebswelle",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9, 0.011785, 0.660886, 1, },
+							},
+						},
+						name = "bogie1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.60138, 0, 0, 1, },
+                    },
+					{
+						children = {
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/drehgestell_lod0.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/radsatz_lod0.msh",
+								name = "rad",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2, 0, 0.496794, 1, },
+							},
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/radsatz_lod0.msh",
+								name = "rad",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2, 0, 0.496794, 1, },
+							},
+							{
+								animations = {
+									drive = {
+										params = {
+											id = "vehicle/train/g1206/antriebswelle.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/antriebswelle_lod0.msh",
+								name = "Antriebswelle",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.9, 0.011785, 0.660886, 1, },
+							},
+						},
+						name = "bogie2",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.60138, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/scheiben.mtl", },
+						mesh = "vehicle/train/g1206/scheiben_lod0.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/scheiben_innen.mtl", },
+						mesh = "vehicle/train/g1206/sonnenblende_lod0.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/gitter_chemoil.mtl", },
+						mesh = "vehicle/train/g1206/gitter_lod0.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/innen.mtl", },
+						mesh = "vehicle/train/g1206/innen_lod0.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							drive = {
+								params = {
+									id = "vehicle/train/g1206/rotor.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/g1206/beweglich.mtl", },
+						mesh = "vehicle/train/g1206/rotor_lod0.msh",
+						name = "Rotor 1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.42992, 0.001154, 3.0845, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/g1206/rotor.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/g1206/beweglich.mtl", },
+						mesh = "vehicle/train/g1206/rotor_lod0.msh",
+						name = "Rotor 2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.78887, 0.001154, 3.0845, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/g1206/trittlicht_lod0.msh",
+						name = "Trittlicht",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					--- Licht ---
+                    {
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/g1206/spitze_hinten_lod0.msh",
+						name = "licht_weiss",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/g1206/hinten_rot_lod0.msh",
+						name = "licht_rot",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/g1206/spitze_vorne_lod0.msh",
+						name = "licht_weiss",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/g1206/vorne_rot_lod0.msh",
+						name = "licht_rot",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/g1206/rumpf_chemoil.mtl", },
+						mesh = "vehicle/train/g1206/rumpf_lod1.msh",
+						name = "Rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/unterbau_chemoil.mtl", },
+						mesh = "vehicle/train/g1206/unterbau_lod1.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/beweglich.mtl", },
+						mesh = "vehicle/train/g1206/anbausatz_lod1.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+						children = {
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/drehgestell_lod1.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/radsatz_lod1.msh",
+								name = "rad",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2, 0, 0.496794, 1, },
+							},
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/radsatz_lod1.msh",
+								name = "rad",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2, 0, 0.496794, 1, },
+							},
+						},
+						name = "bogie1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.60138, 0, 0, 1, },
+                    },
+					{
+						children = {
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/drehgestell_lod1.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/radsatz_lod1.msh",
+								name = "rad",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2, 0, 0.496794, 1, },
+							},
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/radsatz_lod1.msh",
+								name = "rad",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2, 0, 0.496794, 1, },
+							},
+						},
+						name = "bogie2",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.60138, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/scheiben.mtl", },
+						mesh = "vehicle/train/g1206/scheiben_lod0.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/gitter_chemoil.mtl", },
+						mesh = "vehicle/train/g1206/gitter_lod0.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/innen.mtl", },
+						mesh = "vehicle/train/g1206/innen_lod1.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							drive = {
+								params = {
+									id = "vehicle/train/g1206/rotor.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/g1206/beweglich.mtl", },
+						mesh = "vehicle/train/g1206/rotor_lod1.msh",
+						name = "Rotor 1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.42992, 0.001154, 3.0845, 1, },
+					},
+					{
+						animations = {
+							forever = {
+								params = {
+									id = "vehicle/train/g1206/rotor.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "vehicle/train/g1206/beweglich.mtl", },
+						mesh = "vehicle/train/g1206/rotor_lod1.msh",
+						name = "Rotor 2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 5.78887, 0.001154, 3.0845, 1, },
+					},
+					--- Licht ---
+                    {
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/g1206/spitze_hinten_lod0.msh",
+						name = "licht_weiss",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/g1206/hinten_rot_lod0.msh",
+						name = "licht_rot",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/g1206/spitze_vorne_lod0.msh",
+						name = "licht_weiss",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/emissive/train_all_lights.mtl", },
+						mesh = "vehicle/train/g1206/vorne_rot_lod0.msh",
+						name = "licht_rot",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/train/g1206/rumpf_chemoil.mtl", },
+						mesh = "vehicle/train/g1206/rumpf_lod2.msh",
+						name = "Rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/unterbau_chemoil.mtl", },
+						mesh = "vehicle/train/g1206/unterbau_lod2.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/beweglich.mtl", },
+						mesh = "vehicle/train/g1206/anbausatz_lod2.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/train/g1206/gitter_chemoil.mtl", },
+						mesh = "vehicle/train/g1206/gitter_lod0.msh",
+						name = "innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    {
+						children = {
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/drehgestell_lod2.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/radsatz_lod2.msh",
+								name = "rad",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2, 0, 0.496794, 1, },
+							},
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/radsatz_lod2.msh",
+								name = "rad",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2, 0, 0.496794, 1, },
+							},
+						},
+						name = "bogie1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.60138, 0, 0, 1, },
+                    },
+					{
+						children = {
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/drehgestell_lod2.msh",
+								name = "bogie",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/radsatz_lod2.msh",
+								name = "rad",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2, 0, 0.496794, 1, },
+							},
+							{
+						        materials = { "vehicle/train/g1206/beweglich.mtl", },
+								mesh = "vehicle/train/g1206/radsatz_lod2.msh",
+								name = "rad",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.2, 0, 0.496794, 1, },
+							},
+						},
+						name = "bogie2",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -3.60138, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 1200,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 2014,
+		},
+		cost = {
+			price = -1,
+			priceScale = 1,
+		},
+		description = {
+			name = _("g1206_chemoil_gedreht_name"),
+			description = _("g1206_desc"),
+		},
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCostScale = 1,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 2,
+					color = { 0.4, 0.4, 0.4, },
+					frequency = 100,
+					lifeTime = 0.5,
+					position = { -1.32, 0.48, 4.1, },
+					size01 = { 0.5, 0.6, },
+					velocity = { 0, 0, 4, },
+				},
+			},
+		},
+		railVehicle = {
+			configs = {
+				{
+					axles = { "vehicle/train/g1206/radsatz_lod0.msh", },
+					backBackwardParts = { 23, },
+					backForwardParts = { 25, },
+					frontBackwardParts = { 24, },
+					frontForwardParts = { 22, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+				},
+				{
+					axles = { "vehicle/train/g1206/radsatz_lod1.msh", },
+                    backBackwardParts = { 18, },
+					backForwardParts = { 20, },
+					frontBackwardParts = { 19, },
+					frontForwardParts = { 17, },
+					innerBackwardParts = { },
+					innerForwardParts = { },
+                },
+				{
+					axles = { "vehicle/train/g1206/radsatz_lod2.msh", },
+				},
+			},
+			engines = {
+				{
+					power = 1570,
+					tractiveEffort = 291,
+					type = "DIESEL",
+				},
+			},
+			soundSet = { name = "g1206", },
+			topSpeed = 27.7778,
+			weight = 84,
+		},
+		transportVehicle = {
+            carrier = "RAIL",
+			multipleUnitOnly = false,
+            reversible = true,
+            groupFileName = "vehicle/train/g1206/menu_g1206.mdl",
+        },
+		seatProvider = {
+            crewModels = { "characters/era_c_driver_rail.mdl" },
+		    drivingLicense = "RAIL",
+		    seats = {
+                {
+                    animation = "driving_upright",
+					crew = true,
+                    forward = true,
+					group = 1,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5, -1.1, 2.3, 1, },
+                },
+                {
+                    animation = "driving_upright",
+					crew = true,
+                    forward = false,
+					group = 1,
+                    transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, -2.9, 1.1, 2.3, 1, },
+                },
+            },
+		},
+	},
+	version = 1,
+}
+end
