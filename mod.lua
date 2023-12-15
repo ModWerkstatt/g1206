@@ -12,7 +12,7 @@ return {
 		        role = "CREATOR",
 		    },
 		},
-		tags = { "europe", "train", "siemens", "es64f4", "eurosprinter", "electric", "multi-system", "universal" },
+		tags = { "europe", "train", "diesel", "mak", "vossloh", "shunting", "rangier", "privat" },
 		minGameVersion = 0,
 		dependencies = { },
 		url = { "" },
@@ -32,12 +32,12 @@ return {
 	runFn = function (settings, modParams)
 
 		--- Fake ---
-		
+
         local fake_g1206 = {
 			["fake_gebraucht1.mdl"] = true,
 			["fake_gebraucht2.mdl"] = true,
         }
-        
+
 		--- Fake --
         local modelFilterFake = function(fileName, data)
 			local modelName = fileName:match('/g1206_([^/]*.mdl)')
